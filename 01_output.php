@@ -1,7 +1,7 @@
 <?php
 
 
-var_dump('Hello ');
+var_dump('Hello');
 
 
 

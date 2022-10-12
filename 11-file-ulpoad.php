@@ -2,7 +2,7 @@
 if(isset($_POST['submit'])){
     $allowed_ext = array('png' , 'jpg' ,'jpeg', 'Gif');
     if(!empty($_FILES['upload']['name'])){
-print_r($_FILES);
+// print_r($_FILES);
 $file_name = $_FILES['upload']['name'];
 $file_size = $_FILES['upload']['size'];
 $file_emp = $_FILES['upload']['tmp_name'];
@@ -14,7 +14,7 @@ $file_ext = strtolower(end($file_ext));
 
 if(in_array($file_ext, $allowed_ext)){
 if($file_size <= 1000000){
-    move_uploaded_file($file_tmp , $target_dir);
+    move_uploaded_file($file_emp , $target_dir);
     $message = '<p style="color: green"> File Uploading</p>'; 
 
 }else {

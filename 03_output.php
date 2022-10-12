@@ -17,7 +17,7 @@ if($t <12 ){
     echo 'good evening ';
 }
 
-switch($favcolor){
+switch($favcolor = 'red'){
     case 'red' :
         echo 'your favorate color is red';
         break;

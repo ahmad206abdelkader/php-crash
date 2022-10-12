@@ -8,9 +8,9 @@ if(file_exists($file)){
    
     
     $handle = fopen($file, 'r');
-    $content = fread($handle, filesize($file));
+    $contents = fread($handle, filesize($file));
     fclose(($handle));
-echo $contents;
+    echo $contents;
 }else{
     $handle =fopen($file, 'w');
     $contents ='Brad' . PHP_EOL  . 'sara' . PHP_EOL . 'mike';
